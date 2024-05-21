@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
 def number_keys(a_dictionary):
-    for k, v in a_dictionary:
-        return len(k)
+    counter = 0
+    for k, v in a_dictionary.item():
+        counter = counter + 1
+    return counter
